@@ -1,0 +1,83 @@
+/*-----------------------------*\    
+            - Footer
+\*-----------------------------*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-dark-bg);
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            padding: 0 0.5rem;
+            font-size: var(--fz-5);
+            color: var(--color-text);
+            margin-bottom: 1rem;
+            transition: all 0.4s ease-in-out;
+
+            &:hover {
+                color: var(--color-white-bg);
+            }
+        }
+    }
+
+    .footer-copyright {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            text-align: center;
+            color: var(--color-text);
+            font-size: var(--fz-8);
+            font-weight: 700;
+        }
+    }
+}
+
+
+/*-----------------------------*\    
+            - Back To Topbar
+\*-----------------------------*/
+.backtotop {
+    display: grid;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 10;
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.5);
+    transform: translateY(10rem);
+    background: var(--color-white-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+
+    #progress-value {
+        display: block;
+        height: calc(100% - 15%);
+        width: calc(100% - 15%);
+        background: var(--color-white-bg);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 1.5rem;
+        color: var(--color-blue);
+    }
+
+}
+
+.backtotop.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

@@ -1,0 +1,99 @@
+/*-----------------------------*\    
+            - Config
+\*-----------------------------*/
+.contact-info {
+    background: var(--color-blue);
+    padding: 1rem;
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.5);
+
+    div {
+        h4 {
+            color: var(--color-white-bg);
+            font-weight: 800;
+        }
+
+        .info {
+            li {
+                display: flex;
+                position: relative;
+                margin: 1rem 0;
+                align-items: center;
+
+                i {
+                    color: var(--color-white-bg);
+                    font-size: var(--fz-4);
+                }
+
+                .contact-detail {
+                    color: var(--color-white-bg);
+                    font-size: var(--fz-8);
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-white-bg);
+    padding: 1rem;
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.5);
+
+
+
+    h4 {
+        color: var(--color-dark-title);
+        font-weight: 800;
+    }
+
+    .formbox {
+        position: relative;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .inputbox {
+            position: relative;
+            margin-bottom: 1rem;
+            
+            input, textarea {
+                width: 100%;
+                resize: none;
+                padding: 5px 0;
+                font-size: var(--fz-6);
+                color: var(--color-dark-title);
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #c1c1c1c1;
+            }
+
+            textarea {
+                height: 80px;
+            }
+
+            label {
+                font-size: var(--fz-8);
+
+            }
+
+/*             input:focus ~ span,
+            input:valid ~ span,
+            textarea:focus ~ span,
+            textarea:valid ~ span {
+                transform: translateY(-20px);
+                font-size: var(--fz-9);
+                letter-spacing: 1px;
+                font-weight: 600;
+            } */
+        }
+
+        .btn-theme {
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+    }
+}

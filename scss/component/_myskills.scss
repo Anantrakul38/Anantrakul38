@@ -1,0 +1,173 @@
+/*-----------------------------*\    
+            - My Skills
+\*-----------------------------*/
+.myskills {
+    width: 100%; 
+    background: var(--color-white-bg);
+    box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.2);
+    border-radius: 5px;
+    padding: 25px 15px; 
+    margin-top: 20px; 
+
+    .myskills-detail {
+        margin: 20px 0;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+
+            h6 {
+                color: var(--color-dark-title);
+                font-weight: 600;
+                font-size: var(--fz-7);
+                opacity: 0;
+                animation: showTextskill 0.5s 1s linear forwards;
+
+                @keyframes showTextskill {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .line-bar {
+            position: relative;
+            height: 10px;
+            width: 100%;
+            background: var(--color-gray-bg);
+            border-radius: 2px;
+            transform: scaleX(0);
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                              0px 1px rgba(255, 255, 255, 0.8);
+            animation: skillsbar 1s cubic-bezier(1,0,0.5,1) forwards;
+            transform-origin: left;
+
+            @keyframes skillsbar {
+                0% {
+                    transform: scaleX(0);
+                }        
+                100% {
+                    transform: scaleX(1);
+                }
+            }
+
+            span {
+                height: 100%;
+                width: 80%;
+                background: var(--color-blue);
+                position: absolute;
+                border-radius: 2px;
+                transform: scaleX(0);
+                transform-origin: left;
+                animation: skillsbar 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -10px;
+                    height: 0;
+                    width: 0;
+                    border: 7px solid transparent;
+                    border-bottom-width: 0px;
+                    border-right-width: 0px;
+                    border-top-color: var(--color-gray-bg);
+
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -25px;
+                    background: var(--color-gray-bg);
+                    color: var(--color-dark-title);
+                    font-size: var(--fz-8);
+                    font-weight: 600;
+                    padding: 1px 8px;
+                    border-radius: 2px;
+                    opacity: 0;
+                    animation: showText 0.5s 1.5s linear forwards;
+
+                    @keyframes showText {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .line-bar.html {
+            span{
+                    width: 70%;
+            }
+        }
+        .line-bar.css {
+            span{
+                    width: 70%;
+            }
+        }
+        .line-bar.javascript {
+            span{
+                    width: 60%;
+            }
+        }
+        .line-bar.php {
+            span{
+                    width: 40%;
+            }
+        }
+        .line-bar.sql {
+            span{
+                    width: 40%;
+            }
+        }
+
+        .line-bar.html {
+            span{
+                &::after {
+                    content: '70%';
+                }
+            }
+        }
+        .line-bar.css {
+            span{
+                &::after {
+                    content: '70%';
+                }
+            }
+        }
+        .line-bar.javascript {
+            span{
+                &::after {
+                    content: '60%';
+                }
+            }
+        }
+        .line-bar.php {
+            span{
+                &::after {
+                    content: '40%';
+                }
+            }
+        }
+        .line-bar.sql {
+            span{
+                &::after {
+                    content: '40%';
+                }
+            }
+        }
+    }
+}

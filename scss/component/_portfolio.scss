@@ -1,0 +1,68 @@
+/*-----------------------------*\    
+            - Portfolio
+\*-----------------------------*/
+.portfolio {
+    background: var(--color-gray-bg);
+
+    .section-title {
+        p {
+            font-weight: 800;
+            padding-top: 10px;
+        }
+    }
+
+    .projects-slider {
+        width: 100%;
+
+        .slide {
+            margin-top: 15px;
+            transition: 0.75s ease;
+
+            .image {
+                height: auto;
+                width: 90%;
+                overflow: hidden;
+                margin: 0 auto;
+                margin-bottom: -3rem;
+                aspect-ratio: 4/3;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 0.2s linear;
+                    transition: all 0.4s ease-in-out;
+                }
+            }
+            .content-projects {
+                padding: 0 15px;
+                padding-top: 5rem;
+                background: var(--color-white-bg);
+                box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.2);
+
+                h5 {
+                    font-size: var(--fz-7);
+                    font-weight: 800;
+                    color: var(--color-dark-title);
+                }
+
+                p {
+                    padding: 1rem 0;
+                    font-size: var(--fz-8);
+                    font-weight: 600;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

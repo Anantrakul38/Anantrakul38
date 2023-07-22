@@ -1,0 +1,193 @@
+/*-----------------------------*\    
+            - MediaQuery
+\*-----------------------------*/
+
+/*-----------------------------*\    
+            - min-width
+\*-----------------------------*/
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+
+        .intro {
+            .intro-inner {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        .about-me-detail {
+            .about-list {
+                display: flex;
+
+                .about-list-left, .about-list-right {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+
+        .footer-l {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            align-items: center;
+
+            .footer-link {
+                justify-content: flex-start !important;
+            }
+
+            .footer-copyright {
+                justify-content: flex-end !important;
+            } 
+
+            .footer-link, .footer-copyright {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            
+        }
+
+    }
+
+    
+}
+
+@media (min-width: 992px) {
+    .nav-header {
+        display: none;
+    }
+
+    .header-left {
+        left: 0;
+    }
+
+    .main-l {
+        padding-left: 90px;
+    }
+
+    .container {
+        max-width: 960px;
+
+        .about-l {
+            display: flex;
+            position: relative;
+
+            .about-me {
+                flex: 0 0 41.666667%;
+                max-width: 41.666667%;
+            }
+    
+            .about-me-detail {
+                padding-left: 1rem;
+                flex: 0 0 58.333333%;
+                max-width: 58.333333%;
+            }
+
+        }
+
+    .my-about {
+        .about-ll {
+            display: flex;
+            position: relative;
+
+            .my-experience {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+
+            .my-education {
+                flex: 0 0 50%;
+                max-width: 50%;
+                margin: 0;
+            }
+        }
+    }
+
+    .contact-l {
+        display: flex;
+        position: relative;
+
+        .contact-info {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+
+        .contact-form {
+            flex: 0 0 70%;
+            max-width: 70%;
+
+            .formbox {
+
+                .contact-ll {
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .inputbox.w50 {
+                        flex: 0 0 45%;
+                        max-width: 45%;
+                    }
+                    .inputbox.w100 {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                    .inputbox.w30 {
+                        flex: 0 0 40%;
+                        max-width: 40%;
+                    }
+                }            
+            }
+        }
+    }
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+
+        .contact-l {
+            width: calc(100% - 150px);
+            .contact-info {
+                position: absolute;
+                width: 350px;
+                top: 40px;
+                height: calc(100% - 80px);
+                z-index: 1;
+                padding: 2rem;
+            }
+
+            .contact-form {
+                padding: 70px 50px;
+                padding-left: 250px;
+                margin-left: 150px;
+                width: calc(100% - 150px);
+                height: 100%;
+            }
+        }
+
+    
+    }
+}
+
+
+
+
+/*-----------------------------*\    
+            - max-width
+\*-----------------------------*/

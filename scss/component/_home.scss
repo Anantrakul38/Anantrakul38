@@ -1,0 +1,56 @@
+/*-----------------------------*\    
+            - Home
+\*-----------------------------*/
+.home {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+    .intro {
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 100%;
+
+        .intro-inner {
+            background: rgba(255, 255, 255, 0.88);
+            padding: 25px;
+
+            h6 {
+                margin: 0 0 15px;
+                color: var(--color-dark-title);
+                font-size: var(--fz-6);
+                font-weight: 600;
+            }
+
+            h1 {
+                font-size: var(--fz-1);
+                font-weight: 700;
+                color: var(--color-dark-title);
+                margin: 0 0 15px;
+                line-height: 1;
+            }
+
+            .text-typed {
+                span {
+                    display: flex;
+                    font-weight: 500;
+                }
+
+                .animate {
+                    text-transform: capitalize;
+                    color: var(--color-blue);
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                font-size: var(--fz-7);
+                color: var(--color-dark-title);
+                margin: 1rem 0;
+            }
+        }
+    }
+}
