@@ -13,13 +13,6 @@
     .container {
         max-width: 540px;
 
-        .intro {
-            .intro-inner {
-                flex: 0 0 50%;
-                max-width: 50%;
-            }
-        }
-
         .about-me-detail {
             .about-list {
                 display: flex;
@@ -80,6 +73,13 @@
 
     .container {
         max-width: 960px;
+
+        .intro {
+            .intro-inner {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
 
         .about-l {
             display: flex;
@@ -186,8 +186,16 @@
 }
 
 
-
-
 /*-----------------------------*\    
             - max-width
 \*-----------------------------*/
+
+
+@media (max-width: 767px) {
+    #home {
+        h1 {
+            font-size: var(--fz-3);
+        }
+    }
+}
+

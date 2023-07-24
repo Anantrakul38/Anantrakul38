@@ -1,4 +1,19 @@
 /*-----------------------------*\    
+            - Loading Page
+\*-----------------------------*/
+/* window.addEventListener('load', () => {
+  const loading = document.querySelector('.loading');
+
+  document.querySelector('.loading').classList.add('loading--hidden');
+
+  document.querySelector('.loading').addEventListener('transitionend', () => {
+    document.body.removeChild(document.querySelector('.loading'));
+  });
+}); */
+
+
+
+/*-----------------------------*\    
             - Sweetalert
 \*-----------------------------*/
 const Toast = Swal.mixin({

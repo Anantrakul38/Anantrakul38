@@ -15,7 +15,7 @@
         width: 100%;
 
         .slide {
-            margin-top: 15px;
+            margin: 15px 0;
             transition: 0.75s ease;
 
             .image {
@@ -39,6 +39,7 @@
                 padding-top: 5rem;
                 background: var(--color-white-bg);
                 box-shadow: 0px 3px 10px 0px rgba(38, 59, 94, 0.2);
+                height: 12rem;
 
                 h5 {
                     font-size: var(--fz-7);
@@ -52,7 +53,6 @@
                     font-weight: 600;
                 }
             }
-
         }
     }
 }
