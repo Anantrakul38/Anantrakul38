@@ -128,12 +128,12 @@
         }
         .line-bar.php {
             span{
-                    width: 40%;
+                    width: 30%;
             }
         }
         .line-bar.sql {
             span{
-                    width: 40%;
+                    width: 30%;
             }
         }
 
@@ -161,14 +161,14 @@
         .line-bar.php {
             span{
                 &::after {
-                    content: '40%';
+                    content: '30%';
                 }
             }
         }
         .line-bar.sql {
             span{
                 &::after {
-                    content: '40%';
+                    content: '30%';
                 }
             }
         }
